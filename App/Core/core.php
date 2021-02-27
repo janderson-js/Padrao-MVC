@@ -4,12 +4,18 @@
     {
         public function start($urlGet)
         {
-            $controller = ucfirst($urlGet["pagina"].'Controller');
+            $acao = "index";
+            if(isset($urlGet['pagina'])){
+                $controller = ucfirst($urlGet["pagina"].'Controller');
 
-            if(!class_exists($controller)){
-                $controller = "ErroControler";
+            }else{
+                $controller = "HomeController";
             }
 
-            echo $controller;
+            if(!class_exists($controller)){
+                $controller = "ErroController";
+            }
+
+            call_user_func_array(array(new $controller,$acao),array());
         }
     }

@@ -4,9 +4,16 @@
 
     require_once "App/Controller/HomeController.php";
 
+    require_once "App/Controller/ErroController.php";
+
     $template = file_get_contents('http://localhost/mini-blog/App/templete/estrutura.html');
 
-    $core = new Core;
-    $core ->start($_GET);
+    ob_start();
+        $core = new Core;
+        $core ->start($_GET);
+        
+        $saida = ob_get_contents();
+    ob_end_clean();
 
-    echo $template;
+    $tplPronto = str_replace('{{conteudo}}',$saida,$template);
+    echo $tplPronto;
