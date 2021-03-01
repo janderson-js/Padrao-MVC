@@ -6,9 +6,11 @@
 
     require_once "App/Controller/ErroController.php";
 
-    require_once "App/lib/DataBase/Connection.php";
+    require_once "lib/DataBase/Connection.php";
 
     require_once "App/Model/postagem.php";
+
+    require_once "vendor/autoload.php";
 
     $template = file_get_contents('http://localhost/mini-blog/App/templete/estrutura.html');
 
