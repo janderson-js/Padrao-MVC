@@ -4,6 +4,11 @@
     {
         public function index()
         {
-            echo "HOME";
+           try{
+                $teste = Postagem::selecionaTodos();
+                var_dump($teste);
+           }catch(Exception $e){
+               echo $e->getMessage();
+           }
         }
     }
