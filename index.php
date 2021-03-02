@@ -9,6 +9,7 @@
     require_once "lib/DataBase/Connection.php";
 
     require_once "App/Model/postagem.php";
+    require_once "App/Model/comentarios.php";
 
     require_once "vendor/autoload.php";
 
