@@ -1,6 +1,6 @@
 {% for postagem in postagens %}
     <section class="color_black">
-        <a href="#" ><h1>{{postagem.titulo}}</h1></a>
+        <a href="http://localhost/mini-blog/?pagina=post&id={{postagem.id}}" ><h1>{{postagem.titulo}}</h1></a>
         <p>{{postagem.conteudo}}</p>
     </section>
 {% endfor %}

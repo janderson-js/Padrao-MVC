@@ -10,22 +10,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="corpo">
+        <header class="centraliza">
+            <div id="top">
+                <nav class="color_black">
+                    <a href="http://localhost/mini-blog/">home</a> |
+                    <a href="http://localhost/mini-blog/?pagina=sobre">Sobre</a>
+                    <a href="http://localhost/mini-blog/?pagina=admin">admin</a>
+                </nav>
+            </div>
+            <hr>
+        </header>
+        <main class="centraliza">
+            {{conteudo}}
+        </main>
+        <footer>
     
-    <header class="centraliza">
-        <div id="top">
-            <nav class="color_black">
-                <a href="#">home</a> |
-                <a href="#">teste</a>
-                <a href="#">admin</a>
-            </nav>
-        </div>
-        <hr>
-    </header>
-    <main class="centraliza">
-        {{conteudo}}
-    </main>
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

@@ -18,4 +18,22 @@
             }
             return $result;
         }
+
+        public static function selecionaId($idPost)
+        {
+            $con = Connection::getCon();
+
+            $sql = "SELECT * FROM postagem WHERE id = :id";
+            $sql = $con->prepare($sql);
+            $sql->bindValue(":id",$idPost, PDO::PARAM_INT);
+            $sql->execute();
+
+            $result = $sql->fetchObject("Postagem");
+
+            if(!$result){
+                throw new Exception("Não foi encontrado!!");
+            }
+
+            return $result;
+        }
     }

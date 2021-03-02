@@ -3,8 +3,8 @@
     require_once "App/Core/core.php";
 
     require_once "App/Controller/HomeController.php";
-
     require_once "App/Controller/ErroController.php";
+    require_once "App/Controller/PostController.php";
 
     require_once "lib/DataBase/Connection.php";
 

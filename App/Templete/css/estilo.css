@@ -5,14 +5,16 @@
 body{
     background-color: cornflowerblue;
 }
-.centraliza{margin: 0 auto; width: 1000px;background-color: white;}
+.centraliza{background-color: white;}
 .color_black a{color: black;}
+
+#corpo{border: solid 2px gray;margin: 0 auto; width: 1000px;}
 header #top{font-family:sans-serif;padding:20px;box-sizing:border-box;}
             #top nav a{text-decoration: none;}
             #top nav a:hover{color: red;transition: 1s;text-decoration: underline;}
             #top nav a:nth-last-child(1){float: right;}
 main{box-sizing: border-box; padding: 20px;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;}
-    main section{box-sizing: border-box;width: 500px;margin-bottom: 20px; border: solid 1px rgb(197, 197, 197);border-radius: 30px;}
+    main section{box-sizing: border-box;width: 700px;margin-bottom: 20px; border: solid 1px rgb(197, 197, 197);border-radius: 30px;word-wrap: break-word;}
     main section h1{padding: 20px;}
     main section a{text-decoration: none;}
     main section a:hover{text-decoration: underline;}
