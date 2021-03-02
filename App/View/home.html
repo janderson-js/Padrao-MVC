@@ -1,7 +1,6 @@
-<section class="color_black">
-    <a href="#" ><h1>Titulo mesagem</h1></a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias perferendis ea numquam reiciendis
-        voluptate dolor delectus. Laboriosam voluptates aperiam nam hic inventore labore architecto,
-        error animi, optio, repellendus debitis illum.
-    </p>
-</section>
+{% for postagem in postagens %}
+    <section class="color_black">
+        <a href="#" ><h1>{{postagem.titulo}}</h1></a>
+        <p>{{postagem.conteudo}}</p>
+    </section>
+{% endfor %}
