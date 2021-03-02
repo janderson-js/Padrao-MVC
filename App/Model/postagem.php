@@ -34,9 +34,6 @@
                 throw new Exception("Não foi encontrado!!");
             }else{
                 $result->comentarios = Comentario::selecionarComentario($result -> id);
-                if(!$result->comentarios){
-                    $result->comentarios = "Não existe nenhum comentario para essa postagem!!";
-                }
             }
 
             return $result;
